@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+</head>
+
+<body>
+  <nav>
+    <header class="flex flex-row sm:flex-row justify-between w-full bg-black sm:bg-black p-0 items-center">
+      <img class="logo w-18 pb-0 h-12 " src="img/home-search-real-estate-logo main.jpg" alt="logo">
+
+      <div class="flex gap-4 items-center text-yellow-200 mt-4 sm:mt-0">
+        <ul class="flex flex-col sm:flex-row gap-0 sm:gap-4 text-left sm:text-left">
+
+          <li class="hover:border-b-4 hover:border-yellow-200">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:border-b-4 hover:border-yellow-200">
+            <a href="about.html">About</a>
+          </li>
+          <li class="hover:border-b-4 hover:border-yellow-200">
+            <a href="contactus.html">Contact Us</a>
+          </li>
+          <li class="hover:border-b-4 hover:border-yellow-200">
+            <a href="FAQ.html">FAQ</a>
+          </li>
+
+        </ul>
+      </div>
+<div class="gap-0 sm:flex-row lg:flex">
+      <div class="flex flex-row sm:flex-row gap-2 mt-4 sm:mt-0">
+        <button
+          class="text-sm sm:text-xl bg-white text-black px-3
+           sm:px-6 py-1 sm:py-2 rounded-xl hover:text-black hover:border-2 hover:border-black 
+           hover:bg-yellow-200 mt-2 sm:mt-0">
+           <a href="signup.html">Sign up</a>
+        </button>
+        </div>
+        <div class="flex flex-row sm:flex-row gap-2 mt-4 sm:mt-0">
+          <button
+            class="text-sm sm:text-xl bg-black text-white px-3 sm:px-6 py-1 sm:py-2 rounded-xl 
+            hover:text-black hover:border-2 hover:border-black hover:bg-yellow-200 mt-2 sm:mt-0">
+             <a href="login.html">Login</a>
+          </button>
+        </div>
+    </div>
+  </header>
+  </nav>
+
+  <main class="  grid lg:grid-cols-2 p-10 gap-7 bg-gray-200 ">
+
+    <div class=" col-span-1">
+      <img class=" hidden lg:flex col-span-1 " src="img/vanilla villa.jpg" alt="">
+    </div>
+    <div class="col-span-1 gap-3">
+      <form id="signup-form" class="bg-white p-6 rounded shadow-md">
+        <h2 class="text-2xl mb-4">Sign Up</h2>
+        <div class=" sm:flex gap-2 w-full  justify-between">
+          <div>
+            <label for="signup-first-name" class="block mb-2">First Name:</label>
+            <input type="text" id="signup-first-name" name="signup-first-name" required
+              class="w-full p-2 mb-4 border border-gray-300 rounded">
+          </div>
+          <div>
+            <label for="signup-middle-name" class="block mb-2">Middle Name:</label>
+            <input type="text" id="signup-middle-name" name="signup-middle-name" required
+              class="w-full p-2 mb-4 border border-gray-300 rounded">
+          </div>
+          <div>
+            <label for="signup-last-name" class="block mb-2">Last Name:</label>
+            <input type="text" id="signup-last-name" name="signup-last-name" required
+              class="w-full p-2 mb-4 border border-gray-300 rounded">
+          </div>
+        </div>
+
+     <div class=" sm:flex  w-full gap-2">
+      <div class="w-full">
+        <label for="signup-username" class="block mb-2">Phone Number:</label>
+        <input type="number" id="signup-email" name="signup-email" required
+          class="w-full p-2 mb-4 border border-gray-300 rounded">
+      </div>
+        <div class="w-full">
+        <label for="signup-username" class="block mb-2">Email:</label>
+        <input type="text" id="signup-email" name="signup-email" required
+          class="w-full p-2 mb-4 border border-gray-300 rounded">
+      </div>
+     </div>
+        <div>
+          <label for="signup-password" class="block mb-2">Password:</label>
+          <input type="password" id="signup-password" name="signup-password" required
+            class="w-full p-2 mb-4 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="signup-password" class="block mb-2"> Repeat Password:</label>
+          <input type="password" id="signup-password" name="signup-password" required
+            class="w-full p-2 mb-4 border border-gray-300 rounded">
+        </div>
+
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
+
+        <p class="mt-4 text-center text-gray-600">Already have an account? <a href="login.html" id="login-link"
+            class="text-blue-500">Log In</a></p>
+
+      </form>
+    </div>
+
+
+  </main>
+
+
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
