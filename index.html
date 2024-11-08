@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+  <style>
+    /* Add your CSS styles here */
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <nav>
-    <header class="flex flex-row sm:flex-row justify-between w-full bg-black sm:bg-black p-0 items-center">
+    <header id="navbar" class="flex flex-row sm:flex-row justify-between w-full bg-black sm:bg-black p-0 items-center">
       <img class="logo w-18 pb-0 h-12 " src="img/home-search-real-estate-logo main.jpg" alt="logo">
   
       <div class="flex gap-4 items-center text-yellow-200 mt-4 sm:mt-0">
-        <ul class="flex flex-col sm:flex-row gap-0 sm:gap-4 text-left sm:text-left">
-  
+        <ul id="navLinks" class="flex flex-col sm:flex-row gap-0 sm:gap-4 text-left sm:text-left">
           <li class="border-b-4 border-yellow-200">
             <a href="index.html">Home</a>
           </li>
@@ -29,31 +32,52 @@
           <li class="hover:border-b-4 hover:border-yellow-200">
             <a href="FAQ.html">FAQ</a>
           </li>
-  
         </ul>
       </div>
-      <div class="gap-0 sm:flex-row lg:flex">
+      
+      <div id="authButtons" class="gap-0 sm:flex-row lg:flex hidden">
         <div class="flex flex-row sm:flex-row gap-2 mt-4 sm:mt-0">
-          <button
-            class="text-sm sm:text-xl bg-white text-black px-3
-             sm:px-6 py-1 sm:py-2 rounded-xl hover:text-black hover:border-2 hover:border-black 
-             hover:bg-yellow-200 mt-2 sm:mt-0">
+          <button onclick=" "
+            class="text-sm sm:text-xl bg-white text-black px-3 sm:px-6 py-1 sm:py-2 rounded-xl hover:text-black hover:border-2 hover:border-black hover:bg-yellow-200 mt-4 sm:mt-0">
              <a href="signup.html">Sign up</a>
           </button>
-          </div>
-          <div class="flex flex-row sm:flex-row gap-2 mt-4 sm:mt-0">
-            <button
-              class="text-sm sm:text-xl bg-black text-white px-3 sm:px-6 py-1 sm:py-2 rounded-xl 
+        </div>
+        <div class="flex flex-row sm:flex-row gap-2 mt-4 sm:mt-0">
+          <button
+            class="text-sm sm:text-xl bg-black text-white px-3 sm:px-6 py-1 sm:py-2 rounded-xl 
               hover:text-black hover:border-2 hover:border-black hover:bg-yellow-200 mt-2 sm:mt-0">
-               <a href="login.html">Login</a>
-            </button>
-          </div>
+             <a href="login.html">Login</a>
+          </button>
+        </div>
       </div>
     </header>
+  </nav> 
+
+  <script>
+    // JavaScript to toggle the visibility of navigation and authentication buttons
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbar');
+      const navLinks = document.getElementById('navLinks');
+      const authButtons = document.getElementById('authButtons');
+
+      // Check the screen width to decide whether to hide or show the navigation and authentication buttons
+      if (window.innerWidth <= 640) {
+        navLinks.classList.add('hidden');
+        authButtons.classList.remove('hidden');
+      } else {
+        navLinks.classList.remove('hidden');
+        authButtons.classList.add('hidden');
+      }
+    }
+
+    // Call the function initially and whenever the window is resized
+    window.onload = toggleNavbar;
+    window.onresize = toggleNavbar;
+  </script>
   </nav>
   
   
- <body class="bg-cover bg-center bg-no-repeat h-100vh relative h-screen" style="background-image: url('https://nigerianhouseplans.com/wp-content/uploads/2023/09/1002-view-2.jpg');">
+ <body class="bg-cover bg-center bg-no-repeat h-100vh relative h-screen" style="background-image: url(img/hostel\ building.jpg);">
   <div class=" top-0 left-0 w-full h-full bg-black opacity-70"></div>
 
   <div class="absolute h-100vh pt-52 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -180,4 +204,8 @@
           </footer>
         </div>
       </body>
+      <script>
+
+        
+      </script>
 </html>
